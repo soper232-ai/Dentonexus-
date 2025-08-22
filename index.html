@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentonexus - مركز البحوث السنية</title>
+    <meta name="description" content="منصة علمية متطورة تجمع أحدث البحوث والدراسات في طب الأسنان، مدعومة بتقنيات الذكاء الاصطناعي">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/dentonexus_logo.png" alt="Dentonexus" class="logo">
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#research" class="nav-link">البحوث والدراسات <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="#orthodontics" class="dropdown-link">تقويم الأسنان</a>
+                                <a href="#surgery" class="dropdown-link">جراحة الفم</a>
+                                <a href="#conservative" class="dropdown-link">طب الأسنان التحفظي</a>
+                                <a href="#pediatric" class="dropdown-link">طب أسنان الأطفال</a>
+                                <a href="#periodontics" class="dropdown-link">طب اللثة</a>
+                                <a href="#prosthodontics" class="dropdown-link">التركيبات السنية</a>
+                                <a href="#endodontics" class="dropdown-link">علاج الجذور</a>
+                                <a href="#preventive" class="dropdown-link">طب الأسنان الوقائي</a>
+                                <a href="#implants" class="dropdown-link">زراعة الأسنان</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#help" class="nav-link">المساعدة <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="#doctors-help" class="dropdown-link">للأطباء</a>
+                                <a href="#patients-help" class="dropdown-link">للمرضى</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#laboratory" class="nav-link">المخبر</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#ai" class="nav-link">الذكاء الاصطناعي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">عن الموقع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ar">عربي</button>
+                        <button class="lang-btn" data-lang="en">English</button>
+                    </div>
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" id="login-btn">تسجيل الدخول</button>
+                        <button class="btn btn-primary" id="register-btn">إنشاء حساب</button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Search Modal -->
+        <div class="search-modal" id="search-modal">
+            <div class="search-modal-content">
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث في البحوث والدراسات..." class="search-input">
+                    <button class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button class="search-close" id="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">مرحباً بك في Dentonexus</h1>
+                    <p class="hero-subtitle">مركز البحوث السنية الرائد</p>
+                    <p class="hero-description">
+                        منصة علمية متطورة تجمع أحدث البحوث والدراسات في طب الأسنان، 
+                        مدعومة بتقنيات الذكاء الاصطناعي لخدمة الأطباء والمرضى والمخبريين
+                    </p>
+                    
+                    <div class="hero-search">
+                        <div class="search-container">
+                            <input type="text" placeholder="ابحث عن البحوث والدراسات..." class="hero-search-input">
+                            <button class="hero-search-btn">
+                                <i class="fas fa-search"></i>
+                                بحث
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">بحث منشور</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">تخصص طبي</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10000+</div>
+                            <div class="stat-label">مستخدم نشط</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">دعم متاح</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Research Section -->
+        <section class="featured-research">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">أحدث البحوث والدراسات</h2>
+                    <p class="section-subtitle">اكتشف أحدث الاكتشافات والتطورات في طب الأسنان</p>
+                </div>
+
+                <div class="research-grid">
+                    <article class="research-card">
+                        <div class="research-image">
+                            <img src="assets/images/orthodontics.jpg" alt="تقويم الأسنان">
+                            <div class="research-category">تقويم الأسنان</div>
+                        </div>
+                        <div class="research-content">
+                            <h3 class="research-title">تأثير التقويم الشفاف على حركة الأسنان</h3>
+                            <p class="research-excerpt">دراسة شاملة تقيم فعالية التقويم الشفاف مقارنة بالتقويم التقليدي في تحريك الأسنان...</p>
+                            <div class="research-meta">
+                                <span class="research-author">د. أحمد محمد</span>
+                                <span class="research-date">15 مارس 2024</span>
+                            </div>
+                            <div class="research-actions">
+                                <button class="btn btn-outline btn-sm">تلخيص AI</button>
+                                <button class="btn btn-primary btn-sm">قراءة المزيد</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-image">
+                            <img src="assets/images/dental_implants.jpg" alt="زراعة الأسنان">
+                            <div class="research-category">زراعة الأسنان</div>
+                        </div>
+                        <div class="research-content">
+                            <h3 class="research-title">تطوير تقنيات زراعة الأسنان الفورية</h3>
+                            <p class="research-excerpt">بحث حديث يستكشف التقنيات المتطورة في زراعة الأسنان الفورية ومعدلات نجاحها...</p>
+                            <div class="research-meta">
+                                <span class="research-author">د. فاطمة علي</span>
+                                <span class="research-date">12 مارس 2024</span>
+                            </div>
+                            <div class="research-actions">
+                                <button class="btn btn-outline btn-sm">تلخيص AI</button>
+                                <button class="btn btn-primary btn-sm">قراءة المزيد</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-image">
+                            <img src="assets/images/pediatric_dentistry.jpg" alt="طب أسنان الأطفال">
+                            <div class="research-category">طب أسنان الأطفال</div>
+                        </div>
+                        <div class="research-content">
+                            <h3 class="research-title">الوقاية من تسوس الأسنان عند الأطفال</h3>
+                            <p class="research-excerpt">دراسة واسعة النطاق حول أفضل الطرق للوقاية من تسوس الأسنان في مرحلة الطفولة المبكرة...</p>
+                            <div class="research-meta">
+                                <span class="research-author">د. سارة أحمد</span>
+                                <span class="research-date">10 مارس 2024</span>
+                            </div>
+                            <div class="research-actions">
+                                <button class="btn btn-outline btn-sm">تلخيص AI</button>
+                                <button class="btn btn-primary btn-sm">قراءة المزيد</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-image">
+                            <img src="assets/images/periodontics.jpg" alt="طب اللثة">
+                            <div class="research-category">طب اللثة</div>
+                        </div>
+                        <div class="research-content">
+                            <h3 class="research-title">علاج أمراض اللثة بالليزر</h3>
+                            <p class="research-excerpt">تقييم فعالية العلاج بالليزر في علاج التهاب اللثة والأنسجة المحيطة بالأسنان...</p>
+                            <div class="research-meta">
+                                <span class="research-author">د. محمد حسن</span>
+                                <span class="research-date">8 مارس 2024</span>
+                            </div>
+                            <div class="research-actions">
+                                <button class="btn btn-outline btn-sm">تلخيص AI</button>
+                                <button class="btn btn-primary btn-sm">قراءة المزيد</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-footer">
+                    <button class="btn btn-outline btn-lg">عرض جميع البحوث</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Section -->
+        <section class="specialties" id="specialties">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">التخصصات الطبية</h2>
+                    <p class="section-subtitle">استكشف مختلف تخصصات طب الأسنان</p>
+                </div>
+
+                <div class="specialties-grid">
+                    <div class="specialty-card" data-specialty="orthodontics">
+                        <div class="specialty-icon">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <h3 class="specialty-title">تقويم الأسنان</h3>
+                        <p class="specialty-description">تشخيص وعلاج عيوب الإطباق وعدم انتظام الأسنان</p>
+                        <div class="specialty-stats">
+                            <span class="stat">150+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="surgery">
+                        <div class="specialty-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="specialty-title">جراحة الفم والوجه</h3>
+                        <p class="specialty-description">العمليات الجراحية للفم والوجه والفكين</p>
+                        <div class="specialty-stats">
+                            <span class="stat">120+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="conservative">
+                        <div class="specialty-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3 class="specialty-title">طب الأسنان التحفظي</h3>
+                        <p class="specialty-description">الحفاظ على الأسنان الطبيعية بالحشوات والعلاجات</p>
+                        <div class="specialty-stats">
+                            <span class="stat">200+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="pediatric">
+                        <div class="specialty-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3 class="specialty-title">طب أسنان الأطفال</h3>
+                        <p class="specialty-description">صحة الفم والأسنان للأطفال والمراهقين</p>
+                        <div class="specialty-stats">
+                            <span class="stat">90+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="periodontics">
+                        <div class="specialty-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="specialty-title">طب اللثة</h3>
+                        <p class="specialty-description">تشخيص وعلاج أمراض اللثة والأنسجة المحيطة</p>
+                        <div class="specialty-stats">
+                            <span class="stat">110+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="prosthodontics">
+                        <div class="specialty-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="specialty-title">التركيبات السنية</h3>
+                        <p class="specialty-description">تعويض الأسنان المفقودة بالتركيبات المختلفة</p>
+                        <div class="specialty-stats">
+                            <span class="stat">80+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="endodontics">
+                        <div class="specialty-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3 class="specialty-title">علاج الجذور</h3>
+                        <p class="specialty-description">علاج لب الأسنان والجذور المصابة</p>
+                        <div class="specialty-stats">
+                            <span class="stat">95+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="preventive">
+                        <div class="specialty-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="specialty-title">طب الأسنان الوقائي</h3>
+                        <p class="specialty-description">منع حدوث أمراض الفم والأسنان</p>
+                        <div class="specialty-stats">
+                            <span class="stat">70+ بحث</span>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" data-specialty="implants">
+                        <div class="specialty-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3 class="specialty-title">زراعة الأسنان</h3>
+                        <p class="specialty-description">تعويض الأسنان المفقودة بزرعات التيتانيوم</p>
+                        <div class="specialty-stats">
+                            <span class="stat">130+ بحث</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Features Section -->
+        <section class="ai-features" id="ai">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ميزات الذكاء الاصطناعي</h2>
+                    <p class="section-subtitle">تقنيات متطورة لتسهيل البحث والتعلم</p>
+                </div>
+
+                <div class="ai-grid">
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="ai-title">تلخيص البحوث</h3>
+                        <p class="ai-description">تلخيص ذكي للبحوث الطويلة في نقاط واضحة ومفيدة</p>
+                        <button class="btn btn-primary">جرب الآن</button>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 class="ai-title">الإجابة على الأسئلة</h3>
+                        <p class="ai-description">نظام ذكي يجيب على الأسئلة الطبية المتخصصة</p>
+                        <button class="btn btn-primary">اسأل الآن</button>
+                    </div>
+
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="ai-title">تحليل الاتجاهات</h3>
+                        <p class="ai-description">تحليل الاتجاهات البحثية وتوقع المجالات الواعدة</p>
+                        <button class="btn btn-primary">استكشف</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">بحث منشور</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">تخصص طبي</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">10000+</div>
+                            <div class="stat-label">مستخدم نشط</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">دعم متاح</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/dentonexus_logo.png" alt="Dentonexus" class="footer-logo">
+                        <p class="footer-description">
+                            منصة علمية متطورة تجمع أحدث البحوث والدراسات في طب الأسنان
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#research">البحوث والدراسات</a></li>
+                        <li><a href="#help">المساعدة</a></li>
+                        <li><a href="#about">عن الموقع</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">التخصصات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#orthodontics">تقويم الأسنان</a></li>
+                        <li><a href="#surgery">جراحة الفم</a></li>
+                        <li><a href="#pediatric">طب أسنان الأطفال</a></li>
+                        <li><a href="#implants">زراعة الأسنان</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@dentonexus.com</p>
+                        <p><i class="fas fa-phone"></i> +1-800-DENTIST</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dentonexus. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>تسجيل الدخول</h3>
+                <button class="modal-close" data-modal="login-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">البريد الإلكتروني</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">كلمة المرور</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">تسجيل الدخول</button>
+                </form>
+                <div class="auth-footer">
+                    <p>ليس لديك حساب؟ <a href="#" id="show-register">إنشاء حساب جديد</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>إنشاء حساب جديد</h3>
+                <button class="modal-close" data-modal="register-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="register-name">الاسم الكامل</label>
+                        <input type="text" id="register-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">البريد الإلكتروني</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">كلمة المرور</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">تأكيد كلمة المرور</label>
+                        <input type="password" id="register-confirm" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-type">نوع المستخدم</label>
+                        <select id="user-type" required>
+                            <option value="">اختر نوع المستخدم</option>
+                            <option value="doctor">طبيب أسنان</option>
+                            <option value="researcher">باحث</option>
+                            <option value="student">طالب</option>
+                            <option value="lab">مخبري</option>
+                            <option value="patient">مريض</option>
+                        </select>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            أوافق على <a href="#">الشروط والأحكام</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">إنشاء الحساب</button>
+                </form>
+                <div class="auth-footer">
+                    <p>لديك حساب بالفعل؟ <a href="#" id="show-login">تسجيل الدخول</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
